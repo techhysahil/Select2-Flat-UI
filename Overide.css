@@ -9,11 +9,12 @@ Link : http://techhysahil.com
 }
 /*Theme Color override*/
 .select2-container--default .select2-results__option--highlighted[aria-selected]{
-    background: #16a085;
+    background: #16a085 !important;
 }
 .select2-container--default .select2-results__option[aria-selected=true]{
-    background: #48c9b0;
-    color : #fff;
+    background: #16a085;
+    color: #fff;
+    opacity: 0.8;
 }
 .select2-container .select2-choice {
     border: 2px solid #dce4ec;
@@ -134,4 +135,56 @@ Link : http://techhysahil.com
     border-radius: 0px;
     background: transparent;
     background-image: none;
+}
+
+/*New Changes*/
+.select2-container--default .select2-selection--single{
+    background: #48c9b0;
+    border: 0px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{
+    color: #16a085;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #fff;
+    line-height:34px;
+}
+.select2-container .select2-selection--single{
+    height:34px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+{
+    border-color: #fff transparent transparent transparent;
+    top: 60%;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent #fff transparent;
+}
+.select2-container--open .select2-dropdown--below,
+.select2-container--open .select2-dropdown--above{
+    background: #48c9b0;
+}
+/*Tags Style*/
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color: #48c9b0;
+    color: #fff;
+    border: 1px solid #48c9b0;
+    border-radius: 0px;
+    padding: 3px 5px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    color: #16a085;
+    margin-right: 6px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    margin-left: 6px;
+    float: right;
+}
+/*tags Outer border*/
+.select2-container--default .select2-selection--multiple,.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border: 1px solid #16a085;
+}
+/*Placeholder Text Color */
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #fff;
 }
